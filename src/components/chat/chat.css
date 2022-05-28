@@ -1,0 +1,54 @@
+.chat-view{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 1em
+}
+.content-box{
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: initial;
+}
+
+.white-border{
+    border: 1px solid white;
+    cursor: pointer;
+}
+.clicked-btn{
+
+   background-color:  #057f38;;
+}
+.chat-nodes{
+    max-height: 60vh;
+    overflow-y: overlay;
+
+}
+.status-bar{
+    margin-bottom: 1rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.status-bar .status-title{
+    margin-right: 5px;
+}
+.status-bar .status-content{
+  /*   border: 1px solid var(--main-color); */
+  margin-bottom: 5px;
+  /* text-align: left; */
+}
+@media screen and (max-width: 700px) {
+    .terminals-container{
+        margin-top: 3em;
+    }
+    .status-bar{
+        text-align: left;
+    }
+    .status-bar .status-title{
+        margin-right: 0px;
+        margin-bottom: 8px;
+    }
+  }

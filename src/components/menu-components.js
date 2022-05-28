@@ -5,6 +5,8 @@ import Wallet from './admin-lte/wallet'
 import Tokens from './admin-lte/tokens'
 import Configure from './admin-lte/configure'
 import SendReceive from './admin-lte/send-receive'
+import Chat from './chat'
+
 
 const { Item } = Sidebar
 
@@ -12,6 +14,12 @@ const MenuComponents = props => {
   return [
     {
       active: true,
+      key: 'Chat',
+      component: <Chat key='Chat' {...props} />,
+      menuItem: <Item icon='fa-comments' key='Chat' text='Chat' />
+    },
+    {
+      // active: true,
       key: 'Tokens',
       component: <Tokens key='Tokens' {...props} />,
       menuItem: (
