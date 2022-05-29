@@ -45,6 +45,11 @@ export default function HTML (props) {
         {/* bch-message-lib */}
         {/* <script src='https://unpkg.com/bch-message-lib' /> */}
 
+        <script
+          src="https://cdn.jsdelivr.net/npm/ipfs/dist/index.min.js"
+          defer
+        ></script>
+
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
