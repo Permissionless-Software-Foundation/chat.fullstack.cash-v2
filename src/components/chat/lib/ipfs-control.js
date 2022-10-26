@@ -6,8 +6,11 @@
   This library contains the logic around the browser-based IPFS full node.
 */
 
-import IPFS from 'ipfs-core'
+// import IPFS from 'ipfs-core'
 import IpfsCoord from 'ipfs-coord'
+
+// const BchWa = typeof window !== 'undefined' ? window.SlpWallet : null
+const IPFS = Ipfs
 
 // CHANGE THESE VARIABLES
 const CHAT_ROOM_NAME = 'psf-ipfs-chat-001'
